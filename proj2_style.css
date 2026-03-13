@@ -1,0 +1,188 @@
+/* General Styles */
+:root {
+    --bg-color: #efeeea; /* Off-white from screenshot */
+    --text-color: #4a4a4a;
+    --accent-blue: #63b3ed;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 8%;
+    font-size: 1.2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 40px;
+    opacity: 0.7;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 8% 60px 8%;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0;
+}
+
+/* Content Grid (Overview & Details) */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 8%;
+    gap: 40px;
+}
+
+.title-col h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.text-col p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+/* Specifications Table */
+.specs {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 20px;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* CAROUSEL STYLES */
+.carousel-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.carousel-container {
+    width: 100vw;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+
+.carousel-track {
+    display: flex;
+    align-items: center;
+    transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: absolute;
+    left: 0;
+}
+
+.card {
+    min-width: 450px;
+    height: 300px;
+    margin: 0 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.6s ease;
+    transform: scale(0.7);
+    opacity: 0.3;
+    filter: blur(4px);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Center Active Card */
+.card.active {
+    transform: scale(1.4); /* BIG Center Image */
+    opacity: 1;
+    filter: blur(0px);
+    z-index: 10;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+
+
+/* Footer Styling */
+.footer {
+    padding: 80px 8% 40px 8%;
+    background-color: var(--bg-color);
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.footer-name h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.footer-name p {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: right;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+/* Adjusting spacing for mobile */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-links {
+        text-align: left;
+    }
+}
