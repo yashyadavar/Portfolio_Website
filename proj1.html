@@ -5,6 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Yadav | Portfolio</title>
     <link rel="stylesheet" href="proj2_style.css">
+
+
+
+<style>
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.grid img{
+width:100%;
+height:250px;
+object-fit:cover;
+cursor:pointer;
+border-radius:10px;
+}
+
+/* BIG IMAGE VIEW */
+
+#viewer{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+display:none;
+justify-content:center;
+align-items:center;
+}
+
+#viewer img{
+max-width:90%;
+max-height:90%;
+}
+
+#close{
+position:absolute;
+top:20px;
+right:40px;
+font-size:40px;
+color:white;
+cursor:pointer;
+}
+
+</style>
+
+
 </head>
 <body>
 
@@ -26,35 +78,59 @@
             <h2>Project overview</h2>
         </div>
         <div class="text-col">
-            <p>This project involves the comprehensive design and development of a multi-functional campus dedicated to military heritage and veteran welfare. By integrating high-traffic public spaces—such as a state-of-the-art auditorium, sports complex, and interactive military museum—the center serves as a bridge between the armed forces and the civilian community.</p>
+            <p>This project involves the comprehensive design and development of a multi-functional campus dedicated to military heritage and veteran welfare. By integrating high-traffic public spaces-such as a state-of-the-art auditorium, sports complex, and interactive military museum-with essential service hubs like the Zila Sainik Kariyalaya, ECHS polyclinic, and CSD canteen, Skill Development Center, the center serves as a bridge between the armed forces and the civilian community. The goal is to create a sustainable, accessible landmark that honors the legacy of our martyrs at the Shaheed Smarak while providing modernized infrastructure for the defense family.</p>
         </div>
     </section>
 
-        <section class="carousel-section">
+
+
+
+
+
+
+
+
+<section class="carousel-section">
         <div class="carousel-container">
             <div class="carousel-track" id="track">
-                <div class="card"><img src="images/proj1/plans/05-05-2025_SITE PLAN-Layout1.png" alt="View 1"></div>
-                <div class="card"><img src="images/proj1/plans/AUDI 1.png" alt="View 2"></div>
-                <div class="card"><img src="images/proj1/plans/AUDI 2.png" alt="View 3"></div>
-                <div class="card"><img src="images/proj1/plans/AUDI SEC 1.png" alt="View 4"></div>
-                <div class="card"><img src="images/proj1/plans/CAFE_ECHS 1.png" alt="View 5"></div>
-                <div class="card"><img src="images/proj1/plans/CAFE_ECHS 2.png" alt="View 5"></div>
-                <div class="card"><img src="images/proj1/plans/CAFE_ECHS SEC 1.png" alt="View 5"></div>
-                <div class="card"><img src="images/proj1/plans/MATERIAL 1.png" alt="View 5"></div>
-                <div class="card"><img src="images/proj1/plans/MATERIAL 2.png" alt="View 5"></div>
-                <div class="card"><img src="images/proj1/plans/MATERIAL 3.png" alt="View 5"></div>
-                <div class="card"><img src="images/proj1/plans/MUSEUM 1.png" alt="View 5"></div>
-                <div class="card"><img src="images/proj1/plans/PLANTATION 1.png" alt="View 5"></div>
+                <div class="card"><img src="images/proj1/renders/1_1 - Photo.jpg" alt="View 1"></div>
+                <div class="card"><img src="images/proj1/renders/1_10 - Photo.jpg" alt="View 2"></div>
+                <div class="card"><img src="images/proj1/renders/1_2 - Photo.jpg" alt="View 3"></div>
+                <div class="card"><img src="images/proj1/renders/1_3 - Photo.jpg" alt="View 4"></div>
+                <div class="card"><img src="images/proj1/renders/1_4 - Photo.jpg" alt="View 5"></div>
+                <div class="card"><img src="images/proj1/renders/1_5 - Photo.jpg  "alt="View 6"></div>
+                <div class="card"><img src="images/proj1/renders/1_6 - Photo.jpg  "alt="View 7"></div>
+                <div class="card"><img src="images/proj1/renders/1_7 - Photo.jpg  "alt="View 8"></div>
+                <div class="card"><img src="images/proj1/renders/1_8 - Photo.jpg  "alt="View 9"></div>
+                <div class="card"><img src="images/proj1/renders/1_9 - Photo.jpg  "alt="View 10"></div>
+                <div class="card"><img src="images/proj1/renders/1_10 - Photo.jpg" alt="View 11"></div>
+                <div class="card"><img src="images/proj1/renders/2_11 - Photo.jpg" alt="View 12"></div>
+                <div class="card"><img src="images/proj1/renders/2_11 - Photo.jpg" alt="View 13"></div>
+                <div class="card"><img src="images/proj1/renders/2_12 - Photo.jpg " alt="View 14"></div>
+                <div class="card"><img src="images/proj1/renders/2_13 - Photo.jpg " alt="View 15"></div>
+                <div class="card"><img src="images/proj1/renders/2_14 - Photo.jpg " alt="View 16"></div>
+                <div class="card"><img src="images/proj1/renders/2_15 - Photo.jpg " alt="View 17"></div>
+                <div class="card"><img src="images/proj1/renders/2_16 - Photo.jpg " alt="View 18"></div>
+                <div class="card"><img src="images/proj1/renders/2_17 - Photo.jpg" alt="View 19"></div>
+                <div class="card"><img src="images/proj1/renders/3_21 - Photo.jpg " alt="View 20"></div>
+                <div class="card"><img src="images/proj1/renders/3_22 - Photo.jpg" alt="View 21"></div>
+                <div class="card"><img src="images/proj1/renders/3_23 - Photo.jpg " alt="View 22"></div>
+                <div class="card"><img src="images/proj1/renders/3_24 - Photo.jpg " alt="View 23"></div>
+                <div class="card"><img src="images/proj1/renders/3_25 - Photo.jpg" alt="View 24"></div>
+                <div class="card"><img src="images/proj1/renders/3_26 - Photo.jpg" alt="View 25"></div>
+                <div class="card"><img src="images/proj1/renders/3_26 - Photo.jpg " alt="View 26"></div>
             </div>
         </div>
     </section>
+
+
 
     <section class="content-grid">
         <div class="title-col">
             <h2>Details</h2>
         </div>
         <div class="text-col">
-            <p>My contributions have been instrumental in orchestrating the complex spatial planning required to balance public tourism with secure military administration. I oversaw every aspect of the project's lifecycle, from architectural conceptualization to the construction administration of specialized medical and retail facilities.</p>
+            <p>My contributions have been instrumental in orchestrating the complex spatial planning required to balance public tourism with secure military administration. I oversaw every aspect of the project's lifecycle, from the architectural conceptualization of the commemorative zones to the construction administration of the specialized medical and retail facilities. This included ensuring that the aesthetic dignity of the museum and memorial was maintained while delivering the functional rigor necessary for the sports complex and administrative offices.</p>
             
             <div class="specs">
                 <div class="spec-item"><span>Area of site</span> <span>14188 m²</span></div>
@@ -65,18 +141,50 @@
         </div>
     </section>
 
-    <section class="carousel-section">
-        <div class="carousel-container">
-            <div class="carousel-track" id="track">
-                <div class="card"><img src="https://picsum.photos/800/600?random=1" alt="View 1"></div>
-                <div class="card"><img src="https://picsum.photos/800/600?random=2" alt="View 2"></div>
-                <div class="card"><img src="https://picsum.photos/800/600?random=3" alt="View 3"></div>
-                <div class="card"><img src="https://picsum.photos/800/600?random=4" alt="View 4"></div>
-                <div class="card"><img src="https://picsum.photos/800/600?random=5" alt="View 5"></div>
-                
-            </div>
-        </div>
-    </section>
+    
+
+
+<h2>My Projects</h2>
+
+<div class="grid">
+
+<img src="images/proj1/plans/05-05-2025_SITE PLAN-Layout1.png" onclick="openImage(this)">
+<img src="images/proj1/plans/AUDI 1.png" onclick="openImage(this)">
+<img src="images/proj1/plans/AUDI 2.png" onclick="openImage(this)">
+<img src="images/proj1/plans/AUDI SEC 1.png" onclick="openImage(this)">
+<img src="images/proj1/plans/CAFE_ECHS 1.png" onclick="openImage(this)">
+<img src="images/proj1/plans/CAFE_ECHS 2.png" onclick="openImage(this)">
+<img src="images/proj1/plans/CAFE_ECHS SEC 1.png" onclick="openImage(this)">
+<img src="images/proj1/plans/MATERIAL 1.png" onclick="openImage(this)">
+<img src="images/proj1/plans/MATERIAL 2.png" onclick="openImage(this)">
+<img src="images/proj1/plans/MATERIAL 3.png" onclick="openImage(this)">
+<img src="images/proj1/plans/MUSEUM 1.png" onclick="openImage(this)">
+<img src="images/proj1/plans/PLANTATION 1.png" onclick="openImage(this)">
+<img src="images/proj1/plans/PLANTATION 2.png" onclick="openImage(this)">
+<img src="images/proj1/plans/PLANTATION 2.png" onclick="openImage(this)">
+<img src="images/proj1/plans/PLUMB DETAIL 2.png" onclick="openImage(this)">
+<img src="images/proj1/plans/PLUMB DETAIL.png" onclick="openImage(this)">
+<img src="images/proj1/plans/SITE PLAN 1.png" onclick="openImage(this)">
+<img src="images/proj1/plans/SITE SECTION 1.png" onclick="openImage(this)">
+<img src="images/proj1/plans/SPORTS 1.png" onclick="openImage(this)">
+<img src="images/proj1/plans/SPORTS 2.png" onclick="openImage(this)">
+<img src="images/proj1/plans/SPORTS SEC 1.png" onclick="openImage(this)">
+<img src="images/proj1/plans/SPORTS SEC 2.png " onclick="openImage(this)">
+
+
+</div>
+
+
+<div id="viewer">
+
+<span id="close" onclick="closeImage()">×</span>
+
+<img id="bigImage">
+
+</div>
+
+
+
 
 
 
@@ -85,9 +193,9 @@
             <h2>Results</h2>
         </div>
         <div class="text-col">
-            <p>The Military Integrated Tourism Center evolved from an academic thesis into a formally proposed urban development project in collaboration with Aayojan Architects. The project's selection for professional proposal was driven by its innovative approach to "Integrated Welfare," successfully mapping the complex requirements of a Zila Sainik Kariyalaya, ECHS Polyclinic, and CSD Canteen into a unified, high-security campus.</p>
-            <p>The design achieved a unique balance between rigorous military administration and public engagement, featuring a landmark Shaheed Smarak and Military Museum designed to serve as a regional tourism anchor. This project stands as a successful case study in architectural diplomacy, demonstrating how commemorative heritage and essential veteran services can be synthesized into a modern, sustainable urban fabric.</p>
-        </div>
+            <p>The Military Integrated Tourism Center evolved from an academic thesis into a formally proposed urban development project in collaboration with Aayojan Architects. The project's selection for professional proposal was driven by its innovative approach to "Integrated Welfare, successfully mapping the complex requirements of a Zila Sainik Kariyalaya, ECHS Polyclinic, and CSD Canteen into a unified, high-security campus. The design achieved a unique balance between rigorous military administration and public engagement, featuring a landmark Shaheed Smarak and Military Museum designed to serve as a regional tourism anchor. 
+                This project stands as a successful case study in architectural diplomacy, demonstrating how commemorative heritage and essential veteran services can be synthesized into a modern, sustainable urban fabric.</p>
+            
     </section>
 
     <footer class="footer">
@@ -97,8 +205,8 @@
                 <p>Model Town, Malviya Nagar, Jaipur (Raj.) | 8905775064 | yashydv02@yahoo.com</p>
             </div>
             <div class="footer-links">
-                <a href="#">Portfolio</a>
-                <a href="#">Resumé</a>
+                <a href="index.html">Portfolio</a>
+                 <a href="images/resume.jpg" target="_blank">Resume</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -106,6 +214,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

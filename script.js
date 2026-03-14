@@ -137,3 +137,34 @@ window.addEventListener('resize', () => {
     currentIndex = (currentIndex === 0) ? cards.length - 1 : currentIndex - 1;
     updateCarousel();
 });
+
+
+
+
+
+
+
+
+
+
+
+function openImage(img){
+document.getElementById("viewer").style.display="flex";
+document.getElementById("bigImage").src = img.src;
+}
+
+function closeImage(){
+document.getElementById("viewer").style.display="none";
+}
+
+
+
+
+
+
+
+
+
+
+
+

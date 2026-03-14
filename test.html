@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Project Gallery</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:white;
+color:white;
+text-align:center;
+padding:50px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.grid img{
+width:100%;
+height:250px;
+object-fit:cover;
+cursor:pointer;
+border-radius:10px;
+}
+
+/* BIG IMAGE VIEW */
+
+#viewer{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+display:none;
+justify-content:center;
+align-items:center;
+}
+
+#viewer img{
+max-width:90%;
+max-height:90%;
+}
+
+#close{
+position:absolute;
+top:20px;
+right:40px;
+font-size:40px;
+color:white;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>My Projects</h2>
+
+<div class="grid">
+
+<img src="https://picsum.photos/600/400?1" onclick="openImage(this)">
+<img src="https://picsum.photos/600/400?2" onclick="openImage(this)">
+<img src="https://picsum.photos/600/400?3" onclick="openImage(this)">
+<img src="https://picsum.photos/600/400?4" onclick="openImage(this)">
+
+</div>
+
+
+<div id="viewer">
+
+<span id="close" onclick="closeImage()">×</span>
+
+<img id="bigImage">
+
+</div>
+
+
+<script>
+
+function openImage(img){
+document.getElementById("viewer").style.display="flex";
+document.getElementById("bigImage").src = img.src;
+}
+
+function closeImage(){
+document.getElementById("viewer").style.display="none";
+}
+
+</script>
+
+</body>
+</html>
